@@ -24,9 +24,11 @@ namespace Xbim.Geometry.Engine.Interop
             AppDomain.CurrentDomain.AssemblyResolve += XbimCustomAssemblyResolver.ResolverHandler;
         }
 
+        [Obsolete]
         public XbimGeometryEngine() : this(null)
         { }
 
+        [Obsolete]
         public XbimGeometryEngine(ILogger<XbimGeometryEngine> logger)
         {
 
