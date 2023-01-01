@@ -1314,7 +1314,6 @@ namespace Xbim . ModelGeometry . Scene
         /// <param name="contextType"></param>
         /// <param name="requiredContextIdentifier"></param>
         /// <param name="logger"></param>
-        [ Obsolete ]
         public Xbim3DModelContext
         (
                 IModel model

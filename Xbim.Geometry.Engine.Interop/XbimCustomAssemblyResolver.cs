@@ -14,7 +14,6 @@ namespace Xbim.Geometry.Engine.Interop
         const string XbimModulePrefix = "Xbim.";
         static readonly ILogger<XbimCustomAssemblyResolver> _logger;
 
-        [Obsolete]
         static XbimCustomAssemblyResolver()
         {
             _logger = XbimLogging.CreateLogger<XbimCustomAssemblyResolver>();
