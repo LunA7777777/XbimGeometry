@@ -1123,7 +1123,7 @@ namespace Xbim . ModelGeometry . Scene
         private XbimGeometryEngine _engine ;
 
 
-        [ Obsolete ] private XbimGeometryEngine Engine
+        private XbimGeometryEngine Engine
         {
             get
             {
@@ -1132,10 +1132,6 @@ namespace Xbim . ModelGeometry . Scene
         }
 
 
-        [ Obsolete
-        (
-                "Supply ILogger on constructor instead"
-        ) ]
         public static ILogger Logger
         {
             set
@@ -1557,7 +1553,6 @@ namespace Xbim . ModelGeometry . Scene
         /// <param name="progDelegate"></param>
         /// <param name="adjustWcs"></param>       
         /// <returns></returns>
-        [ Obsolete ]
         public bool CreateContext
         (
                 ReportProgressDelegate progDelegate = null
@@ -1810,7 +1805,6 @@ namespace Xbim . ModelGeometry . Scene
         /// Computes and writes to the DB all shapes of products considering their features (openings and extensions).
         /// The process starts from listing all OpeningsAndProjections (from the context) then performs the solid operations.
         /// </summary>
-        [ Obsolete ]
         private HashSet < int > WriteProductsWithFeatures
         (
                 XbimCreateContextHelper contextHelper
@@ -2328,7 +2322,6 @@ namespace Xbim . ModelGeometry . Scene
         }
 
 
-        [ Obsolete ]
         private void WriteProductShapes
         (
                 XbimCreateContextHelper contextHelper
@@ -2477,7 +2470,6 @@ namespace Xbim . ModelGeometry . Scene
         /// <param name="includesOpenings"></param>
         /// <param name="txn"></param>
         /// <returns>IEnumerable of XbimShapeInstance that have been written</returns>
-        [ Obsolete ]
         private IEnumerable < XbimShapeInstance > WriteProductShape
         (
                 XbimCreateContextHelper contextHelper
@@ -2998,7 +2990,6 @@ namespace Xbim . ModelGeometry . Scene
         }
 
 
-        [ Obsolete ]
         private void WriteShapeGeometries
         (
                 XbimCreateContextHelper contextHelper
@@ -3439,7 +3430,6 @@ namespace Xbim . ModelGeometry . Scene
         }
 
 
-        [ Obsolete ]
         private IXbimGeometryObject CallWithTimeout
         (
                 IIfcGeometricRepresentationItem shape
